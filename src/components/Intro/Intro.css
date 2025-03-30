@@ -110,7 +110,7 @@
     left: 80%;
     filter: blur(72px);
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .i-right{
         display: none;
         flex: 0;
