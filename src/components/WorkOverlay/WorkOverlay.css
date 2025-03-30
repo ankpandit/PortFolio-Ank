@@ -12,13 +12,35 @@
     align-items: center;
 }
 .image{
-    width: 70%;
+    width: auto;
     height: 70vh;
-    /* background-image: url("../../img/FlowerPhobia.png");
-    background-repeat: no-repeat; */
+    border-radius: 19px ;
+    /* background-image: url("../../img/FlowerPhobia.png"); */
+    background-repeat: no-repeat;
     display: flex    ;
     justify-content: center;
     align-items: center;
+    animation:slideUp ease-in 0.3s;
+}
+@keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes slideDown {
+    from {
+        /* transform: translateY(0); */
+        opacity: 1;
+    }
+    to {
+        /* transform: translateY(50px); */
+        opacity: 0;
+    }
 }
 .image>img{
     width: 100%;

@@ -1,4 +1,4 @@
-import React,{useState} from 'react' ;
+import React,{useEffect, useState} from 'react' ;
 import './Portfolio.css';
 import {Swiper ,SwiperSlide}  from 'swiper/react' ;
 import 'swiper/css' ;
@@ -8,15 +8,23 @@ import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import WorkOverlay from '../WorkOverlay/WorkOverlay';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function Portfolio() {
     const [selectedImage, setSelectedImage] = useState(null);
-    console.log(selectedImage)
     // Function to show WorkOverlay with selected image
     function displayWork(imgSrc) {
-        console.log(selectedImage)
         setSelectedImage(imgSrc);  // Set image source
     }
+    let list ={Sidebar,FlowerPhobia,Ecommerce,HOC,MusicApp}
+    let slider ;
+    useEffect(()=>{
+        slider = document.querySelector("#slider")
+        // slider.innerHTML=`<SwiperSlide ><img src={Sidebar} alt="" onClick={() => displayWork(Sidebar)} /></SwiperSlide>` ;  
+    })
+    // Object.values(list).forEach(element => {
+    //     slider.appendChild(`<SwiperSlide ><img src=${element} alt="" onClick={() => displayWork(${element})} /></SwiperSlide>`)
+    // });
   return (
     <div className="portfolio" id='PortFolio'>
 
@@ -25,21 +33,21 @@ export default function Portfolio() {
         <span>PortFolio</span>
         
         {/* slider */}
-        <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='portfolio-slider'>
+        <Swiper spaceBetween={30} slidesPerView={3.5} grabCursor={true} className='portfolio-slider' id="slider">
             <SwiperSlide >
                 <img src={Sidebar} alt="" onClick={() => displayWork(Sidebar)} />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={FlowerPhobia} alt="" />
+                <img src={FlowerPhobia} alt="" onClick={() => displayWork(FlowerPhobia)}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={Ecommerce} alt="" />
+                <img src={Ecommerce} alt="" onClick={() => displayWork(Ecommerce)}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={MusicApp} alt="" />
+                <img src={MusicApp} alt="" onClick={() => displayWork(MusicApp)}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src={HOC} alt="" />
+                <img src={HOC} alt="" onClick={() => displayWork(HOC)}/>
             </SwiperSlide>
         </Swiper>
         <WorkOverlay image={selectedImage} onClose={()=>{setSelectedImage(null)}}></WorkOverlay>
