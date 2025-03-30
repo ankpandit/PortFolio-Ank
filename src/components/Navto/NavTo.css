@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.wrapper{
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    background:linear-gradient( rgba(222, 225, 52, 0.5), rgba(57, 164, 227, 0.5)) ;
+    padding:4px 10px 4px 10px;
+    border: 1px solid var(--black);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.wrapper>*{
+    text-decoration: none;
+    color: var(--black);
+    align-self: center;
+}
+.wrapper:hover{
+    background:linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) ;
+    transform: scale(1.06);
+    transition: all 0.4s;
+}
+.wrapper>*:hover{
+    transform: scale(1.6);
+    
+    transition: all 0.3s;
+}
+
+.form-check-input{
+    background-color: var(--orange);
+}
+
+.Link:hover{
+    background-color: black;
+}
+
+
+@media (max-width: 600px) {
+    .wrapper{
+        gap: 1.2rem ;
+        transform: scale(0.8);
+    }
+    .form-check-label{
+        font-size: 15px;
+    }
+    
+}

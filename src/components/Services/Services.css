@@ -1,0 +1,91 @@
+.services{
+    height: 90vh;
+    width: 100%;
+    margin-bottom: rem;
+    margin-top: 9rem;
+    /* margin-bottom: 13rem; */
+    display: flex;
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    flex:1 ;
+}
+.awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(2){
+    color: grey;
+    font-size: 14px;
+    /* margin-top: 1rem; */
+}
+.awesome>:nth-child(4){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.s-button{
+    width:fit-content;
+    margin-top: 1rem;
+}
+.s-blur{
+    position: absolute;
+    top:120%;
+    left: 30%;
+    background-color: rgb(179, 255, 255);
+}
+.cards{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+.cards>:nth-child(1){
+    left:23rem ;
+}
+/* Programming language card  */
+.cards>:nth-child(2){
+    left:4rem;
+    top:8rem ;
+}
+.cards>:nth-child(3){
+    left:23rem;
+    top:18rem;
+}
+
+
+@media (max-width: 1100px) {
+    .services{
+        display: block;
+        padding: 0 0rem 0 0rem;
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+        height: 100%;
+    }
+    .awesome>:nth-child(1){
+        font-size: 2rem;
+    }
+    .awesome>:nth-child(4){
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .cards{
+        position: static !important;
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .cards>*{
+        position: static !important;
+        display: block;
+    }
+}

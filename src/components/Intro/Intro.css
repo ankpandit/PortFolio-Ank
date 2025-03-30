@@ -1,0 +1,150 @@
+.intro{
+    display: flex;
+    width: 100%;
+    height: 77vh;
+    margin-top: 6rem;
+    /* background-color: #edd0ff; */
+}
+.i-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+}
+.i-left>span{
+    /* text-align: left; */
+
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+    line-height:1;
+}
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2):hover{
+    font-size: 3.5rem ;
+    transition: font-size 0.5s;
+
+}
+.i-name>:nth-child(3){
+    color:grey;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+/* software developer , web developer , singer  */
+#typed-text{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+#typed-text:hover{
+    font-size: 3.5rem;
+    transition: font-size 0.5s;
+}
+.i-button{
+    width: 6rem;
+    height: 3rem;
+    box-shadow: var(--boxShadow);
+}
+.i-icons{
+    display: flex;
+    gap:1rem;
+    position: relative;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+    transform: scale(0.7);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1){
+    transform: scale (0.69);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2){
+    top: -4.6rem;
+    transform: scale (0.67);
+    left: -3rem;
+}
+.i-right>:nth-child(3){
+    transform: scale(1.4);
+    left: 28%;
+}
+
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: 9%;
+    left: 80%;
+    filter: blur(72px);
+}
+@media (max-width: 600px) {
+    .i-right{
+        display: none;
+        flex: 0;
+    }
+    .intro{
+        height: 35vh;
+    }
+    .i-name>:nth-child(1){
+        font-size: 1.5rem;
+    
+    }
+    .i-name>:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .i-name>:nth-child(2):hover{
+        font-size: 2.5rem ;
+    
+    }
+    .i-name>:nth-child(3){
+        font-size: 1.2rem;
+    }
+    #typed-text{
+        font-size: 1.5rem;
+    }
+    #typed-text:hover{
+        font-size: 2.5rem;
+    }
+    .i-icons{
+        transform: scale(.9);
+        left:-25px;
+        gap: .3rem;
+    }
+    .i-icons>*{
+        transform: scale(0.45);
+    }    
+    
+}

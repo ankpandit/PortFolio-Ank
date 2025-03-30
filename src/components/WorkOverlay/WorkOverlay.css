@@ -1,0 +1,33 @@
+.overlay{
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 70%;
+    height: 70vh;
+    /* background-image: url("../../img/FlowerPhobia.png");
+    background-repeat: no-repeat; */
+    display: flex    ;
+    justify-content: center;
+    align-items: center;
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-image: url("../../img/FlowerPhobia.png"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    align-self: center;
+}

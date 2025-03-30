@@ -1,0 +1,57 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.n-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.n-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.n-list{
+    flex: 10;
+}
+
+.n-list>ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.n-list>ul>Link>li{
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.n-list>ul>*{
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .n-name{
+        font-size: 1.2rem
+    }
+    .n-list{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .n-right{
+        flex: 0;
+    }
+    .button{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,87 @@
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex:1 ;
+}
+
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.9em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contactawesome{
+    display: flex;
+    flex-direction: column;
+    flex:1 ;
+}
+.contactawesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.contactawesome>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+
+textarea{
+    height: 4rem !important;
+}
+
+.e-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+@media (max-width: 600px) {
+    .contact-form{
+        display: block;
+    }
+    .contactawesome{
+        display: block;
+    }
+    .contactawesome>:nth-child(1){
+        display: block;
+        font-size: 1.6rem;
+    }
+    .contactawesome>:nth-child(2){
+        font-size: 1.6rem;
+        margin-top: 0.3rem;
+    }
+    .c-right .user{
+        width: 15rem;
+        height: 2rem;
+        padding: 0.9em;
+        outline: none;
+        border: 2px solid var(--orange);
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    
+    
+    .w-left{
+        text-align: center;
+    }
+}
