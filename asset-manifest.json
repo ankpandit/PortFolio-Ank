@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortFolio-Ank/static/css/main.3264a97e.css",
-    "main.js": "/PortFolio-Ank/static/js/main.0f681697.js",
+    "main.css": "/PortFolio-Ank/static/css/main.d1a4fd77.css",
+    "main.js": "/PortFolio-Ank/static/js/main.bb9155bd.js",
     "static/media/FlowerPhobia.png": "/PortFolio-Ank/static/media/FlowerPhobia.8c0f7d7a8eb0ef0f2d2a.png",
     "static/media/ecommerce.png": "/PortFolio-Ank/static/media/ecommerce.522da76635d52117102b.png",
     "static/media/sidebar.png": "/PortFolio-Ank/static/media/sidebar.b2225070b8adae68d063.png",
@@ -13,11 +13,11 @@
     "static/media/heartemoji.png": "/PortFolio-Ank/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
     "static/media/Vector2.png": "/PortFolio-Ank/static/media/Vector2.28db5bfd58081dd1df1b.png",
     "index.html": "/PortFolio-Ank/index.html",
-    "main.3264a97e.css.map": "/PortFolio-Ank/static/css/main.3264a97e.css.map",
-    "main.0f681697.js.map": "/PortFolio-Ank/static/js/main.0f681697.js.map"
+    "main.d1a4fd77.css.map": "/PortFolio-Ank/static/css/main.d1a4fd77.css.map",
+    "main.bb9155bd.js.map": "/PortFolio-Ank/static/js/main.bb9155bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3264a97e.css",
-    "static/js/main.0f681697.js"
+    "static/css/main.d1a4fd77.css",
+    "static/js/main.bb9155bd.js"
   ]
 }
