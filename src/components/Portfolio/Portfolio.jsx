@@ -16,15 +16,7 @@ export default function Portfolio() {
     function displayWork(imgSrc) {
         setSelectedImage(imgSrc);  // Set image source
     }
-    let list ={Sidebar,FlowerPhobia,Ecommerce,HOC,MusicApp}
-    let slider ;
-    useEffect(()=>{
-        slider = document.querySelector("#slider")
-        // slider.innerHTML=`<SwiperSlide ><img src={Sidebar} alt="" onClick={() => displayWork(Sidebar)} /></SwiperSlide>` ;  
-    })
-    // Object.values(list).forEach(element => {
-    //     slider.appendChild(`<SwiperSlide ><img src=${element} alt="" onClick={() => displayWork(${element})} /></SwiperSlide>`)
-    // });
+    // let list ={Sidebar,FlowerPhobia,Ecommerce,HOC,MusicApp}
   return (
     <div className="portfolio" id='PortFolio'>
 

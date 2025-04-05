@@ -41,9 +41,9 @@ export default function NavTo() {
             <Link spy={true} to={'Contact'} activeClass='activeClass'>
               <a href='contact'><AiFillCustomerService /></a>
             </Link>
-            <Link spy={true} activeClass='activeClass'>
-              <a href='Tel:+91-8527-657-999 '><IoCall/></a>
-            </Link>
+            {/* <Link spy={true} to='Tel:+91-8527-657-999' activeClass='activeClass'> */}
+              <a href='Tel:+91-8527-657-999'><IoCall style={{color:"#0A58CA"}}/></a>
+            {/* </Link> */}
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={darkMode}/>
               <label class="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
