@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/PortFolio-Ank/static/css/main.d1a4fd77.css",
-    "main.js": "/PortFolio-Ank/static/js/main.bb9155bd.js",
+    "main.js": "/PortFolio-Ank/static/js/main.a199dc12.js",
     "static/media/FlowerPhobia.png": "/PortFolio-Ank/static/media/FlowerPhobia.8c0f7d7a8eb0ef0f2d2a.png",
     "static/media/ecommerce.png": "/PortFolio-Ank/static/media/ecommerce.522da76635d52117102b.png",
     "static/media/sidebar.png": "/PortFolio-Ank/static/media/sidebar.b2225070b8adae68d063.png",
     "static/media/musicapp.png": "/PortFolio-Ank/static/media/musicapp.f1c301f91904ef5f9249.png",
     "static/media/boy.png": "/PortFolio-Ank/static/media/boy.5ca4b670a32b71681d2c.png",
-    "static/media/Updated-Resume.pdf": "/PortFolio-Ank/static/media/Updated-Resume.5abc807b2301966966e3.pdf",
+    "static/media/Updated-Resume.pdf": "/PortFolio-Ank/static/media/Updated-Resume.8d437dcc0fe0d7d68719.pdf",
     "static/media/hoc.png": "/PortFolio-Ank/static/media/hoc.e6af51fc04c57ae67096.png",
     "static/media/humble.png": "/PortFolio-Ank/static/media/humble.c8b32b53675e68978981.png",
     "static/media/heartemoji.png": "/PortFolio-Ank/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
     "static/media/Vector2.png": "/PortFolio-Ank/static/media/Vector2.28db5bfd58081dd1df1b.png",
     "index.html": "/PortFolio-Ank/index.html",
     "main.d1a4fd77.css.map": "/PortFolio-Ank/static/css/main.d1a4fd77.css.map",
-    "main.bb9155bd.js.map": "/PortFolio-Ank/static/js/main.bb9155bd.js.map"
+    "main.a199dc12.js.map": "/PortFolio-Ank/static/js/main.a199dc12.js.map"
   },
   "entrypoints": [
     "static/css/main.d1a4fd77.css",
-    "static/js/main.bb9155bd.js"
+    "static/js/main.a199dc12.js"
   ]
 }
